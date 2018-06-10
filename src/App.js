@@ -47,10 +47,9 @@ class App extends Component {
     console.log(id)
 
     this.setState({
-      tasks: this.state.tasks.map((task) => {
-
-        return task.id === id ? {id:task.id, name: task.name, done: !task.done} : task
-      })
+      tasks: this.state.tasks.map(task => 
+        task.id === id ? {id:task.id, name: task.name, done: !task.done} : task
+      )
     })
   }
 
